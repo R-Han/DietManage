@@ -1,0 +1,7 @@
+f = open('foods.txt', 'r+')
+f.seek(0, 2)
+a=f.tell()
+print(a)
+f.seek(a-4,0)
+print(f.read())
+f.close()
